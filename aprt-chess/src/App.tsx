@@ -8,6 +8,7 @@ import { PieceColor } from "./types/global";
 import { BoardProvider, useBoard } from "./contexts/BoardContext";
 
 function App() {
+  
   const [currentPlayerColor, setCurrentPlayerColor] = useState<PieceColor>("");
   const {playerEmail, setPlayerEmail} = useBoard();
   const [hostID, sethostID] = useState<string | undefined>("");
